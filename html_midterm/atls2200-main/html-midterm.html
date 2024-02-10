@@ -1,14 +1,18 @@
-<html>
+
+
+<!DOCTYPE html> <!--added <!DOCTYPE html>-->
+<html lang="en"> <!--added <html lang="en">-->
+<!--deleted <html>-->
 <head>
     
-    <html language="en">
+    <!-- deleted html language="en"-->
     
-    <title>Error-Filled Page</title>
-    
+    <title>Error-Filled Page</title> 
+</head> <!--added /head-->
 <body>
-    <h1>Welcome to My Error-Filled Page
+    <h1>Welcome to My Error-Filled Page</h1> <!--closed <h1>-->
     
-    This is a paragraph with mismatched tags and missing closing tags.</p>
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p> <!--added <p> opening tag-->
     
     <ol>
         <li>Item 1</li>
@@ -21,13 +25,14 @@
         <li>Item 8</li>
         <li>Item 9</li>
         <li>Item 10</li>
-    </ul>
+    </ol> <!-- replaced </ul> with </ol--> <!-- this also fixes the indentation below-->
 
-    <p>This is another paragraph without proper indentation.
+
+    <p>This is another paragraph without proper indentation.</p> <!--closed paragraph--> <!--fixed indentation-->
     
-    <img src="image.jpg">
+    <img src="image.jpg" alt="Image not loading"> <!--added alt tag-->
 
-    <a href="https://www.example.com" target="_blank">Click me!</img>
+    <a href="https://www.example.com" target="_blank">Click me!></a> <!-- replaced </img with </a> closing tag-->
 
     <table>
         <tr>
@@ -42,24 +47,26 @@
             <td>Jane</td>
             <td>30</td>
         </tr>
-    
-    <img source="error.jpeg" alt="Error Image">
+    </table> <!--added table closing tag-->
 
-    <center>This is centered text.</center>
+    <img src="error.jpeg" alt="Error Image"> <!--changed source to src-->
 
-    <p bgcolor="lightgray">Text</p>
+    <p><center>This is centered text.</center></p> <!--potential error: should be within p tag-->
+    <!--a better way would be <p style="text-align:center;">Centered paragraph</p>-->
 
-    <input type="button" value="Click me">
+    <p style="background-color:lightgray;">Text</p> <!--changed line: style="background-color:{color};"-->
 
-    <!-- This is an unclosed comment
+    <input type="button" value="Click me" /> <!-- closing slash in button input-->
 
-    <a href="#">Link without closing tag
+    <!-- This is an unclosed comment --> <!-- closed comment-->
 
-    <p><em>Underlined text</p></em>
+    <a href="#">Link without closing tag</a> <!--closed link-->
+
+    <p><u>Underlined text</u></p> <!--tags are not nested correctly, swapped--> <!--also: <u> should be used for underlining instead of <em>, which emphasizes text-->
 
     <dl>
-        <li>Descriptive Item Title</li>
-        <li>Descriptive Item Text</li>
+        <dt>Descriptive Item Title</dt><!--swapped <li> out for <dt> since this is a descriptive title-->
+        <dd>Descriptive Item Text</dd><!--swapped <dd> out for <dd> since this is a descriptive text-->
     </dl>
 </body>
 </html>
