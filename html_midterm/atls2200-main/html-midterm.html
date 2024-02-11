@@ -1,18 +1,18 @@
 
 
-<!DOCTYPE html> <!--added <!DOCTYPE html>-->
-<html lang="en"> <!--added <html lang="en">-->
-<!--deleted <html>-->
+<!DOCTYPE html> <!--Error 1-->
+<html lang="en"> <!--added <html lang="en"> Error 3-->
+<!--deleted <html> Error 2-->
 <head>
     
-    <!-- deleted html language="en"-->
+    <!-- deleted html language="en" Error 3-->
     
     <title>Error-Filled Page</title> 
-</head> <!--added /head-->
+</head> <!--Error 4-->
 <body>
-    <h1>Welcome to My Error-Filled Page</h1> <!--closed <h1>-->
+    <h1>Welcome to My Error-Filled Page</h1> <!--Error 5-->
     
-    <p>This is a paragraph with mismatched tags and missing closing tags.</p> <!--added <p> opening tag-->
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p> <!--Error 6-->
     
     <ol>
         <li>Item 1</li>
@@ -25,14 +25,14 @@
         <li>Item 8</li>
         <li>Item 9</li>
         <li>Item 10</li>
-    </ol> <!-- replaced </ul> with </ol--> <!-- this also fixes the indentation below-->
+    </ol> <!--Error 7-->
 
 
-    <p>This is another paragraph without proper indentation.</p> <!--closed paragraph--> <!--fixed indentation-->
+    <p>This is another paragraph without proper indentation.</p> <!--Error 8-->
     
-    <img src="image.jpg" alt="Image not loading"> <!--added alt tag-->
+    <img src="image.jpg" alt="Image not loading"> <!--Error 9-->
 
-    <a href="https://www.example.com" target="_blank">Click me!></a> <!-- replaced </img with </a> closing tag-->
+    <a href="https://www.example.com" target="_blank">Click me!</a> <!--Error 10-->
 
     <table>
         <tr>
@@ -47,26 +47,48 @@
             <td>Jane</td>
             <td>30</td>
         </tr>
-    </table> <!--added table closing tag-->
+    </table> <!--Error 11-->
 
-    <img src="error.jpeg" alt="Error Image"> <!--changed source to src-->
+    <img src="error.jpeg" alt="Error Image"> <!--Error 12-->
 
-    <p><center>This is centered text.</center></p> <!--potential error: should be within p tag-->
-    <!--a better way would be <p style="text-align:center;">Centered paragraph</p>-->
+    <p><center>This is centered text.</center></p> <!--Error 13-->
 
-    <p style="background-color:lightgray;">Text</p> <!--changed line: style="background-color:{color};"-->
+    <p style="background-color:lightgray;">Text</p> <!--Error 14-->
 
-    <input type="button" value="Click me" /> <!-- closing slash in button input-->
+    <input type="button" value="Click me" /> <!--Error 15-->
 
-    <!-- This is an unclosed comment --> <!-- closed comment-->
+    <!-- This is an unclosed comment --> <!--Error 16-->
 
-    <a href="#">Link without closing tag</a> <!--closed link-->
+    <a href="#">Link without closing tag</a> <!--Error 17-->
 
-    <p><u>Underlined text</u></p> <!--tags are not nested correctly, swapped--> <!--also: <u> should be used for underlining instead of <em>, which emphasizes text-->
+    <p><u>Underlined text</u></p> <!--Error 18-->
 
     <dl>
-        <dt>Descriptive Item Title</dt><!--swapped <li> out for <dt> since this is a descriptive title-->
-        <dd>Descriptive Item Text</dd><!--swapped <dd> out for <dd> since this is a descriptive text-->
+        <dt>Descriptive Item Title</dt> <!--Error 19-->
+        <dd>Descriptive Item Text</dd> <!--Error 20-->
     </dl>
+
+    <ol>
+        <li>Error 1: Added !DOCTYPE html in line 3. All html files should start with this line of code.</li>
+        <li>Error 2: Deleted html in line 5. (html lang='en' already fills the required html starter tag)</li>
+        <li>Error 3: Replaced html language="en" with lang="en". Language is incorrect. Also positioned this line above heading.</li>
+        <li>Error 4: Added /head to line 11. Heading needed to be closed.</li>
+        <li>Error 5: Closed h1 in line 13. h1 tag needed to be closed.</li>
+        <li>Error 6: Added p opening tag to line 15. Paragraph was being closed without ever being opened.</li>
+        <li>Error 7: Replaced /ul with /ol. This makes the list ordered as opposed to being unordered. This also fixes the indentation below in line 28.</li>
+        <li>Error 8: Closed paragraph /p, fixed indentation in line 31.</li>
+        <li>Error 9: Added alt tag to line 33. Image needs source and alt tag to load properly.</li>
+        <li>Error 10: Replaced /img with /a closing tag in line 35. This is a hyperlink, not an image.</li>
+        <li>Error 11: Added table closing tag in line 50. This closes out the table.</li>
+        <li>Error 12: Changed source to src in line 52. To properly use the source attribute, src needs to be used.</li>
+        <li>Error 13: Line 54: Centered text should be within p tag. A better to achieve this might be "p style="text-align:center;">Centered paragraph /p".</li>
+        <li>Error 14: Changed line: style="background-color:{color};" in line 56. (bgcolor is incorrect)</li>
+        <li>Error 15: Closing slash in button input in line 58. Input needed to be closed.</li>
+        <li>Error 16: Closed comment in line 60. Comments should follow this format: <!---->.</li>
+        <li>Error 17: Closed link in line 62. Hyperlinks should be closed with /a tag.</li>
+        <li>Error 18: Tags are not nested correctly, I swapped them. Also: u should be used for underlining instead of em, which emphasizes text in line 64.</li>
+        <li>Error 19: Swapped li out for dt since this is a descriptive title in line 68. dt used for descriptive titles.</li>
+        <li>Error 20: Swapped dd out for dd since this is a descriptive text in line 69. dd used for descriptive texts.</li>
+    </ol>
 </body>
 </html>
