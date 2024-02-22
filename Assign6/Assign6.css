@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+
+
+.Scorebox {
+    background-color: rgb(0, 0, 0, 0.1);
+    position: absolute;
+    left: 75px;
+    bottom: 50px;
+    width: 100px;
+    height: 75px;
+}
+
+#overlay {
+    position: absolute;
+    top: 200px;
+}
+
+.Scorecard {
+    position: absolute;
+    color: rgb(255, 255, 255)
+
+}
+
+.firstscore {
+    position: absolute;
+    padding-left: 75px;
+    padding-top: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.secondscore {
+    position: absolute;
+    padding-Left: 75px;
+    padding-top: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.firstteam {
+    position: absolute;
+    padding-top: 25px;
+    color: rgb(255, 0, 0);
+
+}
+
+.secondteam {
+    position: absolute;
+    padding-top: 50px;
+    color: rgb(0, 98, 255);
+}
+
+.SportsChannel {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 950px;
+    top: 450px;
+    height: 125px;
+    width: 200px;
+    margin: 5em auto;
+    border: 0.2em;
+    border-radius: 1.5em;
+}
+
+.Title {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+
+}
