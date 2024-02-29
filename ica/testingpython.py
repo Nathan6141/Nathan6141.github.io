@@ -1,24 +1,28 @@
+import random
 
-class Duration:
-    def __init__(self, hours, minutes):
-        self.hours = hours
-        self.minutes = minutes
+def displayIntro():
+    print('You are in a land of dragons')
+    print()
+def chooseCave():
+    cave = ''
+    while cave != '1' and cave != '2':
+        print('Which cave will you go into (1 or 2):')
+        cave = input('Pick a cave (1 or 2)')
+    return cave
+def caveChecker(chosenCave):
+    friendlyCave = random.randint(1,2)
+    if chosenCave == str(friendlyCave):
+        print('Gives you his treasure')
+    else:
+        print('You make a tasty snack')
 
-    def __add__(self, other):
-        if not isinstance(other, Duration):
-            return None # Outputs 'None'
-        total_hours = self.hours + other.hours
-        total_minutes = self.minutes + other.minutes
-        if total_minutes >= 60:
-            total_hours += 1
-            total_minutes -= 60
-        return Duration(total_hours, total_minutes)
 
-    def __int__(self):
-        return self.hours * 60 + self.minutes
+displayIntro()
 
-flight_time = Duration(2, 43)
-drive_time = Duration(4, 22)
+playAgain = 'yes'
+while playAgain.lower() == 'yes':
+    choice = chooseCave()
+    caveChecker(choice)
 
-print(int(flight_time) + int(drive_time))
-print(int(flight_time + drive_time))
+    print('Do you want to play again?')
+    playAgain = input('Yes or no: ')
