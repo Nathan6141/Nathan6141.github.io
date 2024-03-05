@@ -5,7 +5,7 @@ body{
     width: 25vw;
     height: 20vh;
     background-color: indianred;
-    transition: width 3s, height 2s, background-color 1s, rotate 4s;
+    transition: width 3s, height 2s, background-color 2s, rotate 4s;
 }
 
 #box1:hover {
