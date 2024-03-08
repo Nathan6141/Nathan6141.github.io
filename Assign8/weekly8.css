@@ -11,6 +11,10 @@ h1 {
     background-color:rgb(43, 49, 220);
     color:rgb(0, 0, 0);
     font-size:70px;
+    animation-name: PurpleYoshiMove;
+    animation-duration: 8s;
+    /**make animation run forever**/
+    animation-iteration-count: infinite; 
 }
 nav{
     height: 50vh;
@@ -58,4 +62,18 @@ img{
     width: 300px;
     height: 300px;
     rotate: 360deg;
+}
+
+@keyframes PurpleYoshiMove{
+    from {
+        margin: 0;
+    }
+
+    50% {
+        margin-left: 75%;
+        margin-top: 50%;
+    }
+    to {
+        margin: 0;
+    }
 }
