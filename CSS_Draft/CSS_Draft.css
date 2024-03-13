@@ -21,6 +21,7 @@ body {
   h2 {
     color: #9a0209;
     text-align: center;
+
   }
 
 .logo {
@@ -29,6 +30,8 @@ body {
     margin: 0 auto;
     max-width: 980px;
   }
+
+  /**nav stuff**/
 
 nav {
     background-color: #000;
@@ -56,11 +59,14 @@ nav a {
     padding: .5em 1em;
   }
 
-  .SymphMain {
+/**Intro**/
+
+.SymphMain {
     width: 550px;
     display: block;
     float: left;
     padding-right: 10px;
+    border-radius: 75px;
 }
 
 .intro {
@@ -73,7 +79,10 @@ nav a {
 
 h3 {
     vertical-align:baseline;
+    padding-top: 35px;
 }
+
+/**Main event box**/
 
 .box {
     width: 1000px;
@@ -82,6 +91,8 @@ h3 {
     padding: 10px;
     margin-top: 10px;
     margin: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .topic {
@@ -92,25 +103,39 @@ h3 {
 
 }
 
+/**Event subbox**/
+
 .subbox {
     width: 1000px;
     height: 350px;
     border: 1px solid black;
     padding: 10px;
     margin: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+
+.FA {
+    float: left;
+    
+}
+
+.Rep {
+    float: left;
+    padding-left: 10px;
 }
 
 .FeaturedArtists {
     display: inline-block;
-
-
 }
 
 .Repertoire {
     display: inline-block;
-   
 
 }
+
+/**Lower bar on screen**/
 
 .bottomBar {
     background-color: #b8860b;
@@ -135,6 +160,8 @@ h3 {
     animation-iteration-count: infinite; 
 }
 
+/**Key frame animations**/
+
 @keyframes logoMove{
     from {
         margin: 0;
@@ -147,3 +174,5 @@ h3 {
     }
 
 }
+
+/**Media Queries**/
