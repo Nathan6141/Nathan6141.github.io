@@ -86,7 +86,7 @@ h3 {
 
 .box {
     width: 1000px;
-    height: 350px;
+    height: 400px;
     border: 1px solid black;
     padding: 10px;
     margin-top: 10px;
@@ -107,7 +107,7 @@ h3 {
 
 .subbox {
     width: 1000px;
-    height: 350px;
+    height: 250px;
     border: 1px solid black;
     padding: 10px;
     margin: auto;
@@ -123,7 +123,7 @@ h3 {
 
 .Rep {
     float: left;
-    padding-left: 10px;
+    padding-left: 175px;
 }
 
 .FeaturedArtists {
