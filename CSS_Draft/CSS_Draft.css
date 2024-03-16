@@ -13,13 +13,13 @@ body {
   }
 
   h1 {
-    color:#9a0209;
+    color: #b8860b;;
     text-align: center;
     font-size: 300%;
   }
 
   h2 {
-    color: #9a0209;
+    color: #b8860b;;
     text-align: center;
 
   }
@@ -58,14 +58,18 @@ nav a {
     text-decoration: none;
     padding: .5em 1em;
   }
-
+  nav a:hover {
+    color:#ffc30f;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
 /**Intro**/
 
 .SymphMain {
     width: 550px;
     display: block;
     float: left;
-    padding-right: 10px;
+    padding-right: 30px;
     border-radius: 75px;
 }
 
@@ -87,12 +91,13 @@ h3 {
 .box {
     width: 1000px;
     height: 400px;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 10px;
-    margin-top: 10px;
-    margin: auto;
+    margin-top: 75px;
+    margin-left: 249px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    background-color: #b8860b;
 }
 
 .topic {
@@ -108,11 +113,12 @@ h3 {
 .subbox {
     width: 1000px;
     height: 250px;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 10px;
-    margin: auto;
+    margin-left: 249px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    background-color: #ebbe4d;
 
 }
 
@@ -143,6 +149,8 @@ h3 {
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center;
+    font-size: 25px;
 }
 
 .bottomBar a {
@@ -152,12 +160,13 @@ h3 {
 }
 
 
-.bottomBar > .bottomLogo {
+.bottomLogo {
     width: 200px;
     animation-name: logoMove;
     animation-duration: 8s;
     /**make animation run forever**/
     animation-iteration-count: infinite; 
+    padding-bottom: 80px;
 }
 
 /**Key frame animations**/
@@ -176,3 +185,47 @@ h3 {
 }
 
 /**Media Queries**/
+
+@media screen and (max-width: 400px) {
+    h1 {
+        color: #b8860b;;
+        margin-left: 350px;
+        font-size: 300%;
+      }
+    h2 {
+        margin-left: 95px;
+    }
+    .box {
+        width: 700px;
+        height:750px;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-top: 450px;
+    }
+    .subbox {
+        width: 700px;
+        height:300px;
+        margin-left: 35%;
+        margin-right: 35%;  
+    }
+    .SymphMain {
+        width: 550px;
+        display: block;
+        float: none;
+        padding-left: 250px;
+        border-radius: none;
+    }
+    
+    .intro {
+        width: 950px;
+        height: 350px;
+        padding: 10px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    .Rep {
+        float: none;
+        padding-left: 350px;
+        padding-bottom: 300px;
+    }
+}
