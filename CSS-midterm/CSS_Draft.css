@@ -228,4 +228,10 @@ h3 {
         padding-left: 350px;
         padding-bottom: 300px;
     }
+    .logo {
+        font-size: 200%;
+        padding-left: 300px;
+        margin: 0 auto;
+        max-width: 980px;
+      }
 }

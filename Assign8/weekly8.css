@@ -1,0 +1,79 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(215, 181, 128);
+    color: rgb(20, 137, 233);
+    font-size: large;
+}
+h1 {
+    background-color:rgb(43, 49, 220);
+    color:rgb(0, 0, 0);
+    font-size:70px;
+    animation-name: PurpleYoshiMove;
+    animation-duration: 8s;
+    /**make animation run forever**/
+    animation-iteration-count: infinite; 
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(20, 137, 233);
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+nav a{
+    width:100%;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+
+img{
+    width:30vw;
+    height: 30vh;
+
+}
+
+#red-ball{
+    background-color: rgb(43, 49, 220);
+    width: 20px;
+    height:20px;
+    border-radius: 75%;
+    position: absolute;
+    margin: auto;
+    border: 3px solid rgb(43, 49, 220);
+    padding: 8px;
+    top: 500px;
+    transition: width 3s, height 2s, background-color 2s, rotate 3s;
+
+    
+}
+
+#red-ball:hover {
+    background-color: rgb(43, 49, 220);
+    width: 300px;
+    height: 300px;
+    rotate: 360deg;
+}
+
+@keyframes PurpleYoshiMove{
+    from {
+        margin: 0;
+    }
+
+    50% {
+        margin-left: 75%;
+        margin-top: 50%;
+    }
+    to {
+        margin: 0;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+        font-family: "helvetica neue", helvetica, sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background-color: red;
+        color: black;
+        box-shadow: 1px 1px 2px rgb(0, 0, 200 / 40%);
+        border-radius: 10px;
+        padding: 3px 10px;
+        cursor: pointer;
+        width: 500px;
+        height: 400px;
+        font-size: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const button = document.querySelector("button")
+        button.addEventListener('click', changeText);
+
+        const heading = document.querySelector("h1")
+
+        function changeText() {
+            const head = prompt('tell me a secret');
+            heading.textContent = head;
+        }
+    </script>
+</body>
+</html>
