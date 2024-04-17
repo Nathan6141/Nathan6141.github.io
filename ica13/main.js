@@ -60,9 +60,11 @@ class Ball {
                 const dx = ball.x - this.x;
                 const dy = ball.y - this.y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
-    
+
+                //extra credit
+                //if balls collide,
                 if (distance < this.size + ball.size) {
-                    // Reverse velocities along collision line
+                    // flip velocities of balls
                     [this.velX, ball.velX] = [ball.velX, this.velX];
                     [this.velY, ball.velY] = [ball.velY, this.velY];
                 }
@@ -78,8 +80,8 @@ while (balls.length < 25) {
     const ball = new Ball(
         random(0 + size, width - size),
         random(0 + size, height - size),
-        random(-10, 10),
-        random(-10, 10),
+        random(-7, 7),
+        random(-7, 7),
         randomRGB(),
         size,
     )
