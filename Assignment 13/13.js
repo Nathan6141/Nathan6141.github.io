@@ -92,8 +92,8 @@ console.log(HR2);
 function workFromHome(json){
     const workingFromHome = ["Anna", "Sam"]
     for(let i = 0; i < json.employees.length; i++){
+        json.employees[i].wfh = false;
         for(let j = 0; j < workingFromHome.length; j++){
-            json.employees[i].wfh = false;
             if(json.employees[i].firstName === workingFromHome[j]){
                 json.employees[i].wfh = true;
             }
