@@ -1,0 +1,120 @@
+html, body {
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    flex-direction: column; /* Ensures vertical stacking */
+    justify-content: center; 
+    align-items: center;
+}
+
+#resetVolume {
+    position: fixed;
+    top: 0px; 
+    left: 0; 
+    width: 125px; 
+    padding: 10px;
+    font-size: 16px; 
+    background-color: red; 
+    color: white; 
+    border-radius: 75px;
+    border: none;
+    cursor: pointer;
+    height: 125px;
+    animation-name: moveReset;
+    animation-duration: 8s;
+    animation-iteration-count: infinite; 
+}
+
+#setVolume {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 150px; 
+    padding: 10px;
+    font-size: 16px; 
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 150px;
+    animation-name: setvolAnim;
+    animation-duration: 12s;
+    animation-iteration-count: infinite; 
+}
+
+#volSlide {
+    width: 100%; 
+    margin-top: 100px; 
+
+}
+
+#volumeInfo {
+    position: fixed; 
+    top: 250px; 
+    width: 35%; 
+    text-align: center; 
+    border-radius: 25px;
+    font-size: 50px; 
+    color: #000000; 
+    background-color: #90b9ff;
+}
+
+@keyframes moveReset{ /*Make it difficult to reset the volume*/
+    from {
+        margin: 0;
+    }
+    25% {
+        margin-right: 90%;
+        margin-top: 0%;
+        transform: rotate(90deg);
+    }
+    50% {
+        margin-left: 90%;
+        margin-top: 20%;
+        transform: rotate(0deg);
+    }
+    75%{
+        margin-left: 0%;
+        margin-top: 20%;
+        transform: rotate(-180deg);
+    }
+    to {
+        margin: 0;
+    }
+}
+
+@keyframes setvolAnim { /*Make it difficult to set the volume*/
+    0% {
+        margin-left: 0px;
+    }
+    10% {
+        margin-left: 20%;
+    }
+    20% {
+        margin-left: 40%;
+    }
+    30% {
+        margin-left: 60%;
+    }
+    35% {
+        margin-left: 45%;
+    }
+    40% {
+        margin-left: 80%;
+    }
+    45% {
+        margin-left: 85%;
+    }
+    50% {
+        margin-left:91%;
+    }
+    60% {
+        margin-left: 50%;
+    }
+    85% {
+        margin-left: 75%;
+    }
+
+}
