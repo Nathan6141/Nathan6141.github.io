@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Volume Changer</title>
     <link rel="stylesheet" href="final.css">
 </head>
 <body>
     <script defer src="final.js"></script>
 
-    <button id="resetVolume">Reset Volume</button>
+    <p id="volumeInfo">Volume: 50%</p>
     
+    <div class="containerReset">
+        <button id="resetVolume">Reset Volume</button>
+    </div>
 
-    <input type="range" id="volSlide" min="0" max="100">
-    
+    <input type="range" id="volSlide" min="0" max="100"></input>
 
-    <button id="setVolume">Set Volume</button>
-
-    <p id="volumeInfo">Current Volume: 50%</p>
-
+    <div class="containerSet">
+        <button id="setVolume">Set Volume</button>
+    </div>
 
 </body>
 </html>

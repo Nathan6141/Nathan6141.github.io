@@ -4,22 +4,23 @@ html, body {
     margin: 0; 
     padding: 0; 
     display: flex; 
-    flex-direction: column; /* Ensures vertical stacking */
+    flex-direction: column; 
     justify-content: center; 
     align-items: center;
+    background-color: rgb(158, 213, 255);
 }
+
+
 
 #resetVolume {
     position: fixed;
     top: 0px; 
     left: 0; 
     width: 125px; 
-    padding: 10px;
     font-size: 16px; 
     background-color: red; 
     color: white; 
     border-radius: 75px;
-    border: none;
     cursor: pointer;
     height: 125px;
     animation-name: moveReset;
@@ -27,32 +28,46 @@ html, body {
     animation-iteration-count: infinite; 
 }
 
+.containerReset {
+    background-color: grey;
+    width: 100%;
+
+    top: 200px;
+}
+
 #setVolume {
     position: fixed; 
-    bottom: 0; 
+    bottom: 5px; 
     left: 0; 
     width: 150px; 
     padding: 10px;
     font-size: 16px; 
     background-color: #007BFF;
     color: white;
-    border: none;
     cursor: pointer;
     height: 150px;
     animation-name: setvolAnim;
     animation-duration: 12s;
     animation-iteration-count: infinite; 
+    border-radius: 80px;
+}
+
+.containerSet {
+    background-color: #90b9ff;
+    height: 200px;
+    bottom: 0;
+    width: 100%;
+    border-radius: 80px;
 }
 
 #volSlide {
-    width: 100%; 
-    margin-top: 100px; 
-
+    width: 93%; 
+    margin-top: 650px; 
 }
 
 #volumeInfo {
     position: fixed; 
-    top: 250px; 
+    top: -30px; 
     width: 35%; 
     text-align: center; 
     border-radius: 25px;
@@ -61,27 +76,37 @@ html, body {
     background-color: #90b9ff;
 }
 
+/*Using percentages rather that pixels helps with usability on a mobile screen*/
 @keyframes moveReset{ /*Make it difficult to reset the volume*/
-    from {
+    0% {
         margin: 0;
+        top: 15%;
     }
-    25% {
-        margin-right: 90%;
-        margin-top: 0%;
+    20% {
+        margin-top:30%;
+        right: 10%
+    }
+    40% {
+        right: 100%;
+        top: -10%;
         transform: rotate(90deg);
     }
-    50% {
+    60% {
         margin-left: 90%;
-        margin-top: 20%;
+        margin-top: 16%;
         transform: rotate(0deg);
+    }
+    65% {
+        margin-right: 0%;
+        margin-top: 23%
     }
     75%{
         margin-left: 0%;
-        margin-top: 20%;
+        margin-top: 16%;
         transform: rotate(-180deg);
     }
-    to {
-        margin: 0;
+    100% {
+        top: 15%;
     }
 }
 
