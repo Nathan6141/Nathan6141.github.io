@@ -1,4 +1,4 @@
-let audio = new Audio("jazzBackground.mp3");
+let audio = new Audio("jazzBackground.mp3"); /*could not get my mp3 to play*/
 let currentVol = document.querySelector("#volSlide");
 let volumeInfo = document.getElementById('volumeInfo');
 let setVolume = document.getElementById('setVolume');
